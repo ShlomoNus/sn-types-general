@@ -9,6 +9,9 @@
   ],
   "author": "Shlomo Nusbaum",
   "license": "ISC",
+  "scripts": {
+  "build":"tsc -p tsconfig.json"
+  },
   "peerDependencies": {
     "@types/express": "^4.17.21",
     "@types/node": "^20.11.16",
