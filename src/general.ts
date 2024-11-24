@@ -1,3 +1,4 @@
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export type AnyType = any;
 
 export type Primitives = string | boolean | number | null | undefined;
@@ -18,5 +19,3 @@ export type Pritter<T> = {
     [K in keyof T]: T[K];
     // eslint-disable-next-line @typescript-eslint/ban-types
 } & {};
-
-
