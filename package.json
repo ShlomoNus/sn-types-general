@@ -3,10 +3,17 @@
     "version": "1.0.6",
     "description": "",
     "main": "dist/index.js",
+    "module": "dist/index.mjs",
     "types": "dist/index.d.ts",
     "files": [
-        "/dist"
-    ],
+        "dist/" 
+      ],
+    "exports": {
+      ".": {
+        "import": "./dist/index.mjs",
+        "require": "./dist/index.js"
+      }
+    },
     "author": "Shlomo Nusbaum",
     "license": "ISC",
     "scripts": {
