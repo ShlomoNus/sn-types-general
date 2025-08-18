@@ -15,6 +15,14 @@
     }
   },
   "publishConfig": { "access": "public" },
+    "repository": {
+    "type": "git",
+    "url": "https://github.com/ShlomoNus/-types-sn-general"
+  },
+  "bugs": {
+    "url": "https://github.com/ShlomoNus/-types-sn-general/issues"
+  },
+  "homepage": "https://github.com/ShlomoNus/-types-sn-general#readme",
   "author": "Shlomo Nusbaum",
   "license": "ISC",
   "scripts": {
