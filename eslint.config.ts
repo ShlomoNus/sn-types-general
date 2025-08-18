@@ -39,7 +39,7 @@ export default tseslint.config(
             '@stylistic/semi': ['error', 'always'],
             '@stylistic/quotes': ['error', 'double'],
             '@stylistic/arrow-parens': ['error', 'as-needed'],
-            '@stylistic/comma-dangle': ['error', 'always-multiline'],
+            "@stylistic/comma-dangle": ["error", "never"],
             '@stylistic/indent': ['error', 4],
             '@stylistic/object-curly-spacing': ['error', 'always'],
             '@stylistic/space-before-function-paren': ['error', 'never'],
