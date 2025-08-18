@@ -24,9 +24,7 @@
         "declarationMap": true
     },
     "include": [
-        "src/**/*",
-        "./eslint.config.ts"
-    ],
+        "src/**/*"    ],
     "exclude": [
         "node_modules",
         "build"
