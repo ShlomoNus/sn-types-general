@@ -1,6 +1,6 @@
 {
   "name": "sn-types-general",
-  "version": "1.0.18",
+  "version": "1.0.19",
   "description": "",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
@@ -15,6 +15,17 @@
       "types": "./dist/index.d.ts"
     }
   },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ShlomoNus/-types-sn-general"
+  },
+  "bugs": {
+    "url": "https://github.com/ShlomoNus/-types-sn-general/issues"
+  },
+  "homepage": "https://github.com/ShlomoNus/-types-sn-general#readme",
   "author": "Shlomo Nusbaum",
   "license": "ISC",
   "scripts": {
