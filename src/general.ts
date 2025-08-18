@@ -17,5 +17,4 @@ export type Optional<TData> = TData | null | undefined;
 
 export type Pritter<T> = {
     [K in keyof T]: T[K];
-    // eslint-disable-next-line @typescript-eslint/ban-types
 } & {};
