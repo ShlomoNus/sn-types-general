@@ -21,10 +21,11 @@
         "noUncheckedIndexedAccess": true,
         "noImplicitOverride": true,
         "rootDir": "src",
+        "declarationMap": true
     },
     "include": [
         "src/**/*",
-        "eslint.config.ts"
+        "./eslint.config.ts"
     ],
     "exclude": [
         "node_modules",
