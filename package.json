@@ -1,5 +1,5 @@
 {
-  "name": "sn-types-general",
+  "name": "@ShlomoNus/sn-types-general",
   "version": "1.0.20",
   "description": "",
   "main": "dist/index.js",
@@ -16,7 +16,7 @@
     }
   },
   "publishConfig": {
-    "access": "public"
+    "registry": "https://npm.pkg.github.com/"
   },
   "repository": {
     "type": "git",

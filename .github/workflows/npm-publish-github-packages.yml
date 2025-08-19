@@ -38,25 +38,27 @@ jobs:
     needs: build
     permissions:
       contents: read
-      packages: write
-      id-token: write  
+      packages: write   # <- REQUIRED for GitHub Packages
     steps:
       - name: Download build artifacts
         uses: actions/download-artifact@v4
         with:
           name: build-artifacts
 
-      - name: Setup Node.js
+      - name: Setup Node.js for GitHub Packages
         uses: actions/setup-node@v4
         with:
           node-version: '22.18.0'
-          registry-url: https://registry.npmjs.org/
+          registry-url: 'https://npm.pkg.github.com'
           always-auth: true
 
+      # Auth for GitHub Packages using the built-in token
+      - name: Configure npm auth
+        run: echo "//npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_TOKEN }}" >> ~/.npmrc
+
+      # If your publish step needs dev-time scripts (e.g., prepublishOnly), install
       - name: Install dependencies
         run: npm ci
 
-      - name: Publish to NPM
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.GTOKEN }}
-        run: npm publish --access public --provenance
+      - name: Publish to GitHub Packages
+        run: npm publish
