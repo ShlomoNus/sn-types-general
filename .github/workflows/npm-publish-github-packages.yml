@@ -16,7 +16,7 @@ jobs:
           node-version: '22.18.0'
           cache: 'npm'
           registry-url: 'https://npm.pkg.github.com'
-          scope: '@ShlomoNus'   # <-- must match your package scope
+          scope: '@ShlomoNus'   
 
       - run: npm ci
       - run: npm run build
