@@ -1,6 +1,6 @@
 {
-  "name": "@shlomonus/sn-types-general",
-  "version": "1.0.21",
+  "name": "@ShlomoNus/sn-types-general",
+  "version": "1.0.23",
   "description": "",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
@@ -20,7 +20,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ShlomoNus/-types-sn-general"
+    "url": "https://github.com/ShlomoNus/-types-sn-general.git"
   },
   "bugs": {
     "url": "https://github.com/ShlomoNus/-types-sn-general/issues"
