@@ -35,6 +35,11 @@
     "dev": "tsx watch src/index.ts"
   },
   "devDependencies": {
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/commit-analyzer": "^13.0.1",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/npm": "^12.0.2",
+    "@semantic-release/release-notes-generator": "^14.0.3",
     "@stylistic/eslint-plugin": "^5.2.3",
     "eslint": "^9.33.0",
     "eslint-import-resolver-typescript": "^4.4.4",
@@ -42,6 +47,7 @@
     "globals": "^16.3.0",
     "husky": "^9.1.7",
     "rimraf": "^6.0.1",
+    "semantic-release": "^24.2.7",
     "ts-jest": "^29.4.1",
     "tsconfig-paths": "^4.2.0",
     "typescript": "^5.9.2",
@@ -49,5 +55,18 @@
   },
   "overrides": {
     "eslint": "^9.33.0"
+  },
+    "release": {
+    "branches": ["main"],
+    "plugins": [
+      ["@semantic-release/commit-analyzer"],
+      ["@semantic-release/release-notes-generator"],
+      ["@semantic-release/changelog"],
+      ["@semantic-release/npm"],
+      ["@semantic-release/git", {
+        "assets": ["package.json", "CHANGELOG.md"],
+        "message": "chore(release): 🚀 ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
+      }]
+    ]
   }
 }
