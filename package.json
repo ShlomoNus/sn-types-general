@@ -20,12 +20,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ShlomoNus/-types-sn-general.git"
+    "url": "https://github.com/ShlomoNus/sn-types-general"
   },
   "bugs": {
-    "url": "https://github.com/ShlomoNus/-types-sn-general/issues"
+    "url": "https://github.com/ShlomoNus/sn-types-general/issues"
   },
-  "homepage": "https://github.com/ShlomoNus/-types-sn-general#readme",
+  "homepage": "https://github.com/ShlomoNus/sn-types-general#readme",
   "author": "Shlomo Nusbaum",
   "license": "ISC",
   "scripts": {
